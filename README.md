@@ -1,37 +1,56 @@
-# blog
+---
+home: true
+modules:
+  - BannerBrand
+  - MdContent
+  - Footer
+bannerBrand:
+  heroImage: /logo.png
+  heroImageStyle:
+    maxWidth: '200px'
+    width: '100%'
+    display: block
+    margin: '0 auto 2rem'
+    borderRadius: '1rem'
+  bgImage: '/bg.svg'
+  heroText: vuepress-reco
+  tagline: 一款 vuepress 主题容器，集成多种主题底层功能，快速生成主题风格。主题 2.0 的默认风格是原主题 1.0 迁移而来，更多风格正在路上，敬请期待。
+  buttons:
+    - { text: Guide, link: '/docs/guide/introduce' }
+    - { text: Default Style, link: '/docs/style-default-api/introduce', type: 'plain' }
+isShowTitleInHome: true
+actionText: About
+actionLink: /views/other/about
+features:
+- title: 过去
+  details: 开发一款看着开心、写着顺手的 vuepress 博客主题。
+- title: 当下
+  details: 帮助更多的朋友节省时间去用心书写内容，而不是仅仅配置一个博客去孤芳自赏。
+- title: 未来
+  details: 吸引更多的朋友参与到开发中来，继续强大功能。
+---
 
-#### 介绍
-个人博客
+## 快速开始
 
-#### 软件架构
-软件架构说明
+**npx**
 
+```bash
+# 初始化，并选择 2.x
+npx @vuepress-reco/theme-cli init
+```
 
-#### 安装教程
+**npm**
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+```bash
+# 初始化，并选择 2.x
+npm install @vuepress-reco/theme-cli@1.0.7 -g
+theme-cli init
+```
 
-#### 使用说明
+**yarn**
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+```bash
+# 初始化，并选择 2.x
+yarn global add @vuepress-reco/theme-cli@1.0.7
+theme-cli init
+```
